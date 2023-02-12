@@ -1,22 +1,35 @@
 # Breeder Buddy
 
-Breeder Buddy is a platform designed to help dog breeders manage their breeding activities and information. With Breeder Buddy, breeders can keep track of mating plans, whelping schedules, puppy registrations, and sales, all in one convenient place.
+Breeder Buddy is a platform designed to help dog breeders manage their breeding activities and information. The app provides a convenient and accessible tool for breeders to streamline their operations and better connect with potential customers.
 
-## Features
+With Breeder Buddy, breeders can:
 
-Easy-to-use interface that can be accessed from any device with internet access
-Comprehensive user manual to help breeders understand the platform's features and functions
-Training session to ensure breeders are able to use the platform effectively
-One-year warranty that includes bug fixing and technical support
-Deployment to breeders' servers
-Code delivery package including the source code and relevant documentation
-Project report detailing the development process and any challenges faced
+* Keep track of mating plans
+* Manage whelping schedules
+* Register puppies
+* Keep track of sales
+* Upload photos of puppies and classify their breeds using AWS Rekognition
 
-## Requirements
-Breeder Buddy requires a device with internet access and a modern web browser.
+The app is hosted on an EC2 instance and uses RDS for data storage. The RDS credentials are securely stored in the AWS Systems Manager Parameter Store to ensure the security of the data.
 
-## Support
-If you encounter any issues or have questions about using Breeder Buddy, please don't hesitate to reach out to us. Our team is dedicated to supporting you and ensuring the success of your breeding business.
+The app is written using the Flask framework and is comprised of several Python scripts. The scripts interact with the RDS database and the AWS Rekognition service to provide the desired functionality.
 
-## Contributing
-If you would like to contribute to the development of Breeder Buddy, we welcome your pull requests! Please follow our contribution guidelines and make sure to test your changes thoroughly before submitting.
+## Getting Started
+To use Breeder Buddy, you will need to have an AWS account and access to the AWS Management Console. Follow these steps to get started:
+
+1. Clone the Breeder Buddy repository to your local machine
+2. Create an EC2 instance and an RDS database
+3. Store the RDS credentials in the AWS Systems Manager Parameter Store
+4. Deploy the app to the EC2 instance
+5. Access the app from any device with internet access
+
+For more information on how to use Breeder Buddy, refer to the comprehensive user manual included in the repository.
+
+## Contributions
+If you would like to contribute to the development of Breeder Buddy, please feel free to submit a pull request. We welcome all contributions, no matter how big or small.
+
+## License
+Breeder Buddy is licensed under the MIT License.
+
+## Contact
+If you have any questions or concerns about Breeder Buddy, please don't hesitate to contact us.
